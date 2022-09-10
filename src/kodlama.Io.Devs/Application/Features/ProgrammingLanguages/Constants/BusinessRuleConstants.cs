@@ -9,5 +9,6 @@ namespace Application.Features.ProgrammingLanguages.Constants
     public static class BusinessRuleConstants
     {
         public static string ProgrammingLanguageAlreadyExists = "Programming language already exits.";
+
     }
 }
