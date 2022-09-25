@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Core.Security.Entities;
+using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -15,6 +16,8 @@ namespace Persistence.Contexts
 
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
         public DbSet<ProgrammingTechnology> ProgrammingTechnologies { get; set; }
+        public DbSet<UserGithub> UserGithubs { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public BaseDbContext(IConfiguration configuration, DbContextOptions dbContextOptions):base(dbContextOptions)
         {
